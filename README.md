@@ -12,24 +12,7 @@ Copy code blocks to clipboard.
 
 ## How to copy a code block
 
-Write a fenced or indented code block and create a `[copycode]` shortcut.
-
-## Examples
-
-Content file with code block and copy button:
-
-    ---
-    Title: Example
-    ----
-    This is an example page. 
-    
-    ```
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-    tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. 
-    ```
-
-    [copycode]
+This extension automatically creates a "copy code" button below each fenced or indentec code block in a page. Click the button to copy the content to your clipboard. 
 
 ## Developer
 

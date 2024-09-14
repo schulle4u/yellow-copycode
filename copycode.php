@@ -23,23 +23,24 @@ class YellowCopycode {
             "CopycodeButtonCopied: Kod kopierad!"));
     }
     
-    // Handle page content element
-    public function onParseContentElement($page, $name, $text, $attributes, $type) {
-        $output = null;
-        if ($name=="copycode" && ($type=="block" || $type=="inline")) {
-            $output = "<div class=\"".htmlspecialchars($name)."\"><button class=\"".htmlspecialchars($name)."-btn\" data-copycodeCopied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\" aria-label=\"".$this->yellow->language->getTextHtml("copycodeButton")."\">";
-            $output .= "<span class=\"".htmlspecialchars($name)."-btn-text\">".$this->yellow->language->getTextHtml("copycodeButton")."</span><span class=\"".htmlspecialchars($name)."-sr-only\" aria-live=\"polite\"></span>";
-            $output .= "</button></div>\n";
-        }
-        return $output;
-    }
-    
     // Handle page extra data
     public function onParsePageExtra($page, $name) {
         $output = null;
         if ($name=="header") {
             $assetLocation = $this->yellow->system->get("coreServerBase").$this->yellow->system->get("coreAssetLocation");
             $output .= "<script type=\"text/javascript\" defer=\"defer\" src=\"{$assetLocation}copycode.js\"></script>\n";
+        }
+        return $output;
+    }
+    // Handle page output data
+    public function onParsePageOutput($page, $text) {
+        $output = null;
+        if ($text)  {
+            $outputNew = "</pre>\n";
+            $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycodeCopied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\" aria-label=\"".$this->yellow->language->getTextHtml("copycodeButton")."\">";
+            $outputNew .= "<span class=\"copycode-btn-text\">".$this->yellow->language->getTextHtml("copycodeButton")."</span><span class=\"copycode-sr-only\" aria-live=\"polite\"></span>";
+            $outputNew .= "</button></div>\n";
+            $output = preg_replace("/<\/pre>/", $outputNew, $text);
         }
         return $output;
     }

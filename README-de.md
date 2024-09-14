@@ -12,24 +12,7 @@ Code-Blöcke in Zwischenablage kopieren.
 
 ## Wie man einen Code-Block kopiert
 
-Schreibe einen umrahmten oder eingerückten Code-Block und erstelle darunter eine `[copycode]`-Abkürzung. 
-
-## Beispiele
-
-Inhaltsdatei mit Code-Block und Kopier-Schaltfläche:
-
-    ---
-    Title: Beispiel
-    ----
-    Dies ist eine Beispielseite. 
-    
-    ```
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-    tempor incididunt ut labore et dolore magna pizza. Ut enim ad minim veniam, 
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo. 
-    ```
-
-    [copycode]
+Diese Erweiterung platziert eine Code-Kopieren-Schaltfläche unter jeden umrahmten oder eingerückten Code-Block in einer Seite. Klicke auf den Button, um den Inhalt des Code-Blocks in die Zwischenablage zu kopieren. 
 
 ## Entwickler
 
