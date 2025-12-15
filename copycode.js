@@ -22,17 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Get code copied message from data attribute
                 const copiedText = button.getAttribute('data-copycodeCopied');
 
-                // Update button label (visible part)
+                // Update button label
                 button.querySelector('.copycode-btn-text').textContent = copiedText;
-
-                // Update text for screen readers
-                const srOnlySpan = button.querySelector('.copycode-sr-only');
-                srOnlySpan.textContent = copiedText;
 
                 // Restore original label after 2 seconds
                 setTimeout(() => {
                     button.querySelector('.copycode-btn-text').textContent = originalText;
-                    srOnlySpan.textContent = '';
                 }, 2000);
             } catch (err) {
                 console.error('Failed!', err);
