@@ -12,15 +12,15 @@ class YellowCopycode {
             "Language: en",
             "CopycodeDescription: Copy code blocks to clipboard.",
             "CopycodeButton: Copy code",
-            "CopycodeButtonCopied: Code copied!",
+            "CopycodeButtonCopied: copied!",
             "Language: de",
             "CopycodeDescription: Code-Blöcke in Zwischenablage kopieren.",
             "CopycodeButton: Code kopieren",
-            "CopycodeButtonCopied: Code kopiert!",
+            "CopycodeButtonCopied: Kopiert!",
             "Language: sv",
             "CopycodeDescription: Kopiera kodblock till klippbordet.",
             "CopycodeButton: Kopiera kod",
-            "CopycodeButtonCopied: Kod kopierad!"));
+            "CopycodeButtonCopied: Kopierad!"));
     }
     
     // Handle page extra data
