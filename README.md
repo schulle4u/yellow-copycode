@@ -12,7 +12,7 @@ Copy code blocks to clipboard.
 
 ## How to copy a code block
 
-This extension automatically creates a "copy code" button below each fenced or indentec code block in a page. Click the button to copy the content to your clipboard. 
+This extension automatically creates a "copy code" button below each fenced or indented code block in a page. Click the button to copy the content to your clipboard. 
 
 ## Developer
 
