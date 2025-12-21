@@ -32,12 +32,13 @@ class YellowCopycode {
         }
         return $output;
     }
+
     // Handle page output data
     public function onParsePageOutput($page, $text) {
         $output = null;
         if ($text)  {
             $outputNew = "</pre>\n";
-            $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycodeCopied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\">";
+            $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycode-copied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\">";
             $outputNew .= "<span class=\"copycode-btn-text\">".$this->yellow->language->getTextHtml("copycodeButton")."</span>";
             $outputNew .= "</button></div>\n";
             $output = preg_replace("/<\/pre>/", $outputNew, $text);

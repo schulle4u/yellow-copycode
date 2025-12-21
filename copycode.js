@@ -1,39 +1,32 @@
 // Copycode extension, https://github.com/schulle4u/yellow-copycode
 
-document.addEventListener('DOMContentLoaded', function () {
-    const codeBlocks = document.querySelectorAll('pre');
-    const copyButtons = document.querySelectorAll('.copycode-btn');
+document.addEventListener("DOMContentLoaded", function () {
+    const codeBlocks = document.querySelectorAll("pre");
+    const copyButtons = document.querySelectorAll(".copycode-btn");
 
     copyButtons.forEach((button, index) => {
-        button.addEventListener('click', function () {
-            // Create a temporary text area
-            const tempTextArea = document.createElement('textarea');
+        button.addEventListener("click", function () {
+            const tempTextArea = document.createElement("textarea");
             tempTextArea.value = codeBlocks[index].textContent;
             document.body.appendChild(tempTextArea);
             tempTextArea.select();
 
             try {
-                // Copy text to clipboard
-                document.execCommand('copy');
+                document.execCommand("copy");
 
-                // Save original button text
-                const originalText = button.querySelector('.copycode-btn-text').textContent;
+                const originalText = button.querySelector(".copycode-btn-text").textContent;
 
-                // Get code copied message from data attribute
-                const copiedText = button.getAttribute('data-copycodeCopied');
+                const copiedText = button.getAttribute("data-copycode-copied");
 
-                // Update button label
-                button.querySelector('.copycode-btn-text').textContent = copiedText;
+                button.querySelector(".copycode-btn-text").textContent = copiedText;
 
-                // Restore original label after 2 seconds
                 setTimeout(() => {
-                    button.querySelector('.copycode-btn-text').textContent = originalText;
+                    button.querySelector(".copycode-btn-text").textContent = originalText;
                 }, 2000);
             } catch (err) {
-                console.error('Failed!', err);
+                console.error("Failed!", err);
             }
 
-            // Remove temporary textarea
             document.body.removeChild(tempTextArea);
         });
     });
