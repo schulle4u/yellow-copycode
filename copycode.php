@@ -38,8 +38,8 @@ class YellowCopycode {
         $output = null;
         if ($text) {
             $outputNew = "</pre>\n";
-            $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycode-copied=\"".$this->yellow->language->getTextHtml("CopycodeButtonCopied")."\">";
-            $outputNew .= "<span class=\"copycode-btn-text\">".$this->yellow->language->getTextHtml("CopycodeButton")."</span>";
+            $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycode-copied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\">";
+            $outputNew .= "<span class=\"copycode-btn-text\">".$this->yellow->language->getTextHtml("copycodeButton")."</span>";
             $outputNew .= "</button></div>\n";
             $output = preg_replace("/<\/pre>/", $outputNew, $text);
         }
