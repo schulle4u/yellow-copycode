@@ -36,7 +36,7 @@ class YellowCopycode {
     // Handle page output data
     public function onParsePageOutput($page, $text) {
         $output = null;
-        if ($text)  {
+        if ($text) {
             $outputNew = "</pre>\n";
             $outputNew .= "<div class=\"copycode\"><button class=\"copycode-btn\" data-copycode-copied=\"".$this->yellow->language->getTextHtml("copycodeButtonCopied")."\">";
             $outputNew .= "<span class=\"copycode-btn-text\">".$this->yellow->language->getTextHtml("copycodeButton")."</span>";
