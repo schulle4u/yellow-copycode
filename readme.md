@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a></p>
-
 # Copycode 0.9.1
 
-Copy code blocks to clipboard.
+Copy code blocks to clipboard. Developed by Steffen Schultz.
 
 <p align="center"><img src="screenshot.png" alt="Screenshot"></p>
 
@@ -14,6 +12,4 @@ Copy code blocks to clipboard.
 
 This extension automatically creates a "copy code" button below each fenced or indented code block in a page. Click the button to copy the content to your clipboard. 
 
-## Developer
-
-Steffen Schultz. [Get help](https://datenstrom.se/yellow/help/).
+Do you have questions? [Get help](https://datenstrom.se/yellow/help/).

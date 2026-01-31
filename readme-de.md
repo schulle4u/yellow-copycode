@@ -1,8 +1,6 @@
-<p align="right"><a href="readme-de.md">Deutsch</a> &nbsp; <a href="readme.md">English</a></p>
-
 # Copycode 0.9.1
 
-Code-Blöcke in Zwischenablage kopieren.
+Code-Blöcke in Zwischenablage kopieren. Entwickelt von Steffen Schultz.
 
 <p align="center"><img src="screenshot.png" alt="Bildschirmfoto"></p>
 
@@ -14,6 +12,4 @@ Code-Blöcke in Zwischenablage kopieren.
 
 Diese Erweiterung platziert eine Code-Kopieren-Schaltfläche unter jeden umrahmten oder eingerückten Code-Block in einer Seite. Klicke auf den Button, um den Inhalt des Code-Blocks in die Zwischenablage zu kopieren. 
 
-## Entwickler
-
-Steffen Schultz. [Hilfe finden](https://datenstrom.se/de/yellow/help/).
+Hast du Fragen? [Hilfe finden](https://datenstrom.se/de/yellow/help/).
